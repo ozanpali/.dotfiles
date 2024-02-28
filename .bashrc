@@ -139,4 +139,4 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 source /home/ozanpali/.config/broot/launcher/bash/br
-bind '"\e[1;5D":"cd ..\n"'
+bind '"\e[1;2D":"cd ..\n"'
