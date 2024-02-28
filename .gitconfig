@@ -1,0 +1,10 @@
+[user]
+	email = ozanpali@gmail.com
+	name = ozanpali
+[credential]
+	credentialStore = cache
+	helper = store
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[init]
+	defaultBranch = main
