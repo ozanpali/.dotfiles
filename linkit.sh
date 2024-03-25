@@ -13,11 +13,14 @@ declare -a DOTFILES=(
     #".local/share/fonts"
 )
 
-# Iterate over each dotfile and create symbolic links if they don't exist
+# Iterate over each dotfile
 for dotfile in "${DOTFILES[@]}"; do
-    if [ ! -e "${HOME}/${dotfile}" ]; then
-        ln -s "${DIR}/${dotfile}" "${HOME}/${dotfile}"
-    else
-        echo "Skipping $dotfile. File already exists."
+    # Check if the dotfile exists
+    if [ -e "${HOME}/${dotfile}" ]; then
+        # Move existing dotfile to backup directory
+        mv "${HOME}/${dotfile}" "${BACKUP_DIR}/"
     fi
+    
+    # Create symbolic link to the dotfile in the dotfiles directory
+    ln -sf "${DIR}/${dotfile}" "${HOME}/${dotfile}"
 done
