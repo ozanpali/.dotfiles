@@ -127,9 +127,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 #alias "--"="cd -"
-alias co='checkout'
 alias mv='mv -i'
-alias gs='git status'
 
 . "$HOME/.cargo/env"
 
@@ -138,14 +136,15 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-source /home/ozanpali/.config/broot/launcher/bash/br
+# source /home/ozanpali/.config/broot/launcher/bash/br
 bind '"\e[1;2D":"cd ..\n"'
+
 
 
 # Save a lot of typing for common commands
 alias gs="git status"
 alias gc="git commit"
-
+alias gco"git checkout"
 # Save you from mistyping
 alias sl=ls
 
