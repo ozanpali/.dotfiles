@@ -143,12 +143,14 @@ bind '"\e[1;2D":"cd ..\n"'
 
 # Save a lot of typing for common commands
 alias gs="git status"
+alias ga="git add"
 alias gc="git commit"
 alias gco="git checkout"
-alias gl="git log --all --graph --decorate"
-alias glo="git log --all --graph --decorate --oneline"
+alias gl="git log --all --graph --decorate --oneline"
+alias gll="git log --all --graph --decorate"
 alias gp="git pull"
 alias gf="git fetch"
+alias gp="git push"
 # Save you from mistyping
 alias sl=ls
 
