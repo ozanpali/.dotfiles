@@ -145,7 +145,8 @@ bind '"\e[1;2D":"cd ..\n"'
 alias gs="git status"
 alias gc="git commit"
 alias gco="git checkout"
-alias gl="git log --all --graph --decorate --oneline "
+alias gl="git log --all --graph --decorate"
+alias glo="git log --all --graph --decorate --oneline"
 alias gp="git pull"
 alias gf="git fetch"
 # Save you from mistyping
