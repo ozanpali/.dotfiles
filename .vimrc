@@ -22,3 +22,4 @@ set history=1000
 set guicursor+=n-v-c:blinkon500-blinkoff500
 set backspace=indent,eol,start
 set mouse=v
+set whichwrap+=<,>,[,]
